@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/styles/main.css">
+</head>
+
+<body>
+    <header>
+        <!-- .container-big>.logo+.links+.profile -->
+        <div class="container-big">
+            <div class="logo">
+                <i class="fa fa-cart-shopping"></i>
+                <a href="">
+                    <span>E</span> Grocery
+                </a>
+            </div>
+            <div class="links">
+                <a href="">Домой</a>
+                <a href="">Наши продукты</a>
+                <a href="">Категории</a>
+            </div>
+            <div class="profile">
+                <!-- a.circle.like+a.circle.cart+.avatar>a.photo+a.name{stepasha_2014}>i -->
+                <a href="" class="circle like">
+                    <i class="fa fa-heart"></i>
+                </a>
+                <a href="./cart.html" class="circle cart">
+                    <i class="fa fa-cart-shopping"></i>
+                </a>
+                <div class="avatar">
+                    <a href="" class="photo circle"></a>
+                    <a href="" class="name">stepasha_2014<i class="fa fa-chevron-down"></i></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="section section-welcome">
+            <div class="container-small">
+                <h1>Заказывайте наши товары <br>
+                    Выгодно, Быстро и Удобно</h1>
+                <p>#Бесплатная доставка #Вкусная еда #Выгодные цены</p>
+                <form action="">
+                    <input type="text" placeholder="Поиск полезных продуктов" required>
+                    <button>Найти</button>
+                    <i class="fa fa-search"></i>
+                </form>
+            </div>
+        </section>
+
+        <section class="section section-category">
+            <div class="container-small title">
+                <div class="left">
+                    <a href="">
+                        <h2>Категории</h2>
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="right">
+                    <a href="" class="dack disabled">
+                        <i class="fa fa-chevron-left"></i>
+                    </a>
+                    <a href="" class="forward enabled">
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="container-small category-cards">
+                <div class="card">
+                    <img src="./assets/images/бургер.png" alt="">
+                    <h3>Бургеры</h3>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/лапша.png" alt="">
+                    <h3>Лапша</h3>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/пицца.png" alt="">
+                    <h3>Пицца</h3>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/лимонад.png" alt="">
+                    <h3>Лимонад</h3>
+                </div>
+                <div class="card">
+                    <img src="./assets/images/пиво.png" alt="">
+                    <h3>Пиво</h3>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-products">
+            <div class="container-small title">
+                <div class="left">
+                    <a href="">
+                        <h2>Популярные продукты</h2>
+                    </a>
+                </div>
+                <div class="right">
+                    <a href="" class="forward enabled" id="all_products">
+                        Все товары
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+
+            <div class="container-small grid-products">
+                <div class="col-1 card big">
+                    <h3>почему данные продукты популярны</h3>
+                    <p>Далеко-далеко за, словесными горами в стране гласных и согласных живут рыбные тексты. Заглавных
+                        обеспечивает свой щеке даль силуэт вдали рукописи. Себя его власти алфавит журчит своего города
+                        вопроса агентство все грустный однажды!</p>
+                    <p>Далеко-далеко за словесными, горами в стране гласных и согласных живут рыбные тексты. На берегу
+                        дорогу, пустился своих переписали всеми деревни города они семь!</p>
+                    <a href="">
+                        <span> Узнать большо <br> о здоровом питании</span>
+                        <i class="fa fa-chevron-right"></i>
+                    </a>
+                </div>
+                <div class="col-1 card">
+                    <img src="./assets/images/бургер цв.png" alt="">
+                    <div class="product-title">
+                        <div class="left">
+                            <h3>Бургер Тарантино</h3>
+                            <p>1 шт</p>
+                        </div>
+                        <div class="right">
+                            <a href="">-</a>
+                            <h4>1</h4>
+                            <a href="">+</a>
+                        </div>
+                    </div>
+                    <div class="product-price">
+                        <h3>500₽</h3>
+                        <a href="">
+                            <i class="fa fa-bag-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-1 card">
+                    <img src="./assets/images/пицца цв.png" alt="">
+                    <div class="product-title">
+                        <div class="left">
+                            <h3>Пицца Сицилийская</h3>
+                            <p>1 шт</p>
+                        </div>
+                        <div class="right">
+                            <a href="">-</a>
+                            <h4>1</h4>
+                            <a href="">+</a>
+                        </div>
+                    </div>
+                    <div class="product-price">
+                        <h3>900₽</h3>
+                        <a href="">
+                            <i class="fa fa-bag-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-1 card">
+                    <img src="./assets/images/хай.png" alt="">
+                    <div class="product-title">
+                        <div class="left">
+                            <h3>Холодный Heineken</h3>
+                            <p>1 шт</p>
+                        </div>
+                        <div class="right">
+                            <a href="">-</a>
+                            <h4>1</h4>
+                            <a href="">+</a>
+                        </div>
+                    </div>
+                    <div class="product-price">
+                        <h3>250₽</h3>
+                        <a href="">
+                            <i class="fa fa-bag-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-1 card">
+                    <img src="./assets/images/кола.png" alt="">
+                    <div class="product-title">
+                        <div class="left">
+                            <h3>Освежающая Coca-Cola</h3>
+                            <p>1 шт</p>
+                        </div>
+                        <div class="right">
+                            <a href="">-</a>
+                            <h4>1</h4>
+                            <a href="">+</a>
+                        </div>
+                    </div>
+                    <div class="product-price">
+                        <h3>200₽</h3>
+                        <a href="">
+                            <i class="fa fa-bag-shopping"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section-comments">
+            <input type="radio" name="comment" id="comment-input-1" checked>
+            <input type="radio" name="comment" id="comment-input-2">
+            <input type="radio" name="comment" id="comment-input-3">
+            <div class="container-big hider">
+                <div class="line">
+                    <div class="comment">
+                        <div class="top">
+                            <div class="profile">
+                                <img src="./assets/images/avatar.jpeg" alt="">
+                                <h3> Johnatan Doe 1</h3>
+                                <p>Первый парень на деревне</p>
+                            </div>
+                            <div class="stars">
+                                <div class="fa fa-star"></div>
+                                <div class="fa fa-star"></div>
+                                <div class="fa fa-star"></div>
+                                <div class="fa fa-star"></div>
+                                <div class="fa fa-star"></div>
+                            </div>
+                        </div>
+
+                        <p class="botton">Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные
+                            тексты.
+                            Дал вопроса образ за необходимыми ведущими его страна все встретил пояс, свой, буквенных
+                            своих.
+                            Продолжил о по всей напоивший дороге семантика точках предупреждал жаренные правилами
+                            деревни
+                            необходимыми, большого журчит грамматики ему прямо ведущими своего маленькая, над раз ты
+                            заголовок.
+                            Бросил, деревни инициал. Напоивший, имени свое? Родного повстречался бросил вдали?
+                            Курсивных,
+                            безопасную?</p>
+                    </div>
+                    <div class="comment">
+                        <div class="top">
+                            <div class="profile">
+                                <img src="./assets/images/avatar.jpeg" alt="">
+                                <h3> Johnatan Doe 2</h3>
+                                <p>Первый парень на деревне</p>
+                            </div>
+                            <div class="stars">
+                                <div class="fa fa-star"></div>
+                                <div class="fa fa-star"></div>
+                                <div class="fa fa-star"></div>
+                                <div class="fa fa-star"></div>
+                                <div class="fa fa-star"></div>
+                            </div>
+                        </div>
+
+                        <p class="botton">Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные
+                            тексты.
+                            Дал вопроса образ за необходимыми ведущими его страна все встретил пояс, свой, буквенных
+                            своих.
+                            Продолжил о по всей напоивший дороге семантика точках предупреждал жаренные правилами
+                            деревни
+                            необходимыми, большого журчит грамматики ему прямо ведущими своего маленькая, над раз ты
+                            заголовок.
+                            Бросил, деревни инициал. Напоивший, имени свое? Родного повстречался бросил вдали?
+                            Курсивных,
+                            безопасную?</p>
+                    </div>
+                    <div class="comment">
+                        <div class="top">
+                            <div class="profile">
+                                <img src="./assets/images/avatar.jpeg" alt="">
+                                <h3> Johnatan Doe 3</h3>
+                                <p>Первый парень на деревне</p>
+                            </div>
+                            <div class="stars">
+                                <div class="fa fa-star"></div>
+                                <div class="fa fa-star"></div>
+                                <div class="fa fa-star"></div>
+                                <div class="fa fa-star"></div>
+                                <div class="fa fa-star"></div>
+                            </div>
+                        </div>
+
+                        <p class="botton">Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные
+                            тексты.
+                            Дал вопроса образ за необходимыми ведущими его страна все встретил пояс, свой, буквенных
+                            своих.
+                            Продолжил о по всей напоивший дороге семантика точках предупреждал жаренные правилами
+                            деревни
+                            необходимыми, большого журчит грамматики ему прямо ведущими своего маленькая, над раз ты
+                            заголовок.
+                            Бросил, деревни инициал. Напоивший, имени свое? Родного повстречался бросил вдали?
+                            Курсивных,
+                            безопасную?</p>
+                    </div>
+                    <div class="comment">
+                        <div class="top">
+                            <div class="profile">
+                                <img src="./assets/images/avatar.jpeg" alt="">
+                                <h3> Johnatan Doe 4</h3>
+                                <p>Первый парень на деревне</p>
+                            </div>
+                            <div class="stars">
+                                <div class="fa fa-star"></div>
+                                <div class="fa fa-star"></div>
+                                <div class="fa fa-star"></div>
+                                <div class="fa fa-star"></div>
+                                <div class="fa fa-star"></div>
+                            </div>
+                        </div>
+
+                        <p class="botton">Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные
+                            тексты.
+                            Дал вопроса образ за необходимыми ведущими его страна все встретил пояс, свой, буквенных
+                            своих.
+                            Продолжил о по всей напоивший дороге семантика точках предупреждал жаренные правилами
+                            деревни
+                            необходимыми, большого журчит грамматики ему прямо ведущими своего маленькая, над раз ты
+                            заголовок.
+                            Бросил, деревни инициал. Напоивший, имени свое? Родного повстречался бросил вдали?
+                            Курсивных,
+                            безопасную?</p>
+                    </div>
+                    <div class="comment">
+                        <div class="top">
+                            <div class="profile">
+                                <img src="./assets/images/avatar.jpeg" alt="">
+                                <h3> Johnatan Doe 5</h3>
+                                <p>Первый парень на деревне</p>
+                            </div>
+                            <div class="stars">
+                                <div class="fa fa-star"></div>
+                                <div class="fa fa-star"></div>
+                                <div class="fa fa-star"></div>
+                                <div class="fa fa-star"></div>
+                                <div class="fa fa-star"></div>
+                            </div>
+                        </div>
+
+                        <p class="botton">Далеко-далеко за словесными горами в стране гласных, и согласных живут рыбные
+                            тексты.
+                            Дал вопроса образ за необходимыми ведущими его страна все встретил пояс, свой, буквенных
+                            своих.
+                            Продолжил о по всей напоивший дороге семантика точках предупреждал жаренные правилами
+                            деревни
+                            необходимыми, большого журчит грамматики ему прямо ведущими своего маленькая, над раз ты
+                            заголовок.
+                            Бросил, деревни инициал. Напоивший, имени свое? Родного повстречался бросил вдали?
+                            Курсивных,
+                            безопасную?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container-big switches">
+                <label for="comment-input-1" id="label-comment-1">1</label>
+                <label for="comment-input-2" id="label-comment-2">2</label>
+                <label for="comment-input-3" id="label-comment-3">3</label>
+            </div>
+
+        </section>
+
+<section class="app">
+    <div class="container-small">
+        <div class="left">
+            <img src="./assets/images/qr.png" alt="">
+            
+        </div>
+        <div class="right">
+            <div class="top">
+                <h3>Скачать приложение</h3>
+                <p>Далеко-далеко за словесными горами в стране гласных и согласных живут, рыбные тексты. Даль ведущими он имени его лучше речью вопрос коварных? Переулка коварных дорогу, его жаренные вершину вопрос даль текст дал курсивных?</p>
+                <p>Далеко-далеко за словесными горами в стране гласных и согласных, живут рыбные тексты. Коварный они решила, всемогущая составитель заманивший о которой алфавит большого!</p>                
+            </div>
+            <div class="bottom">
+                <div class="buttons">
+                    <a href="">
+                        <img src="./assets/images/google.png" alt="">
+                    </a>
+                    <a href="">
+                        <img src="./assets/images/apple.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+    </main>
+
+    <!-- <div class="test-carousel">
+        <input type="radio" name="test-carousel" id="input-1" checked>
+        <input type="radio" name="test-carousel" id="input-2">
+        <input type="radio" name="test-carousel" id="input-3">
+        <label for="input-1" id="label-1">Кнопка 1</label>
+        <label for="input-2" id="label-2">Кнопка 2</label>
+        <label for="input-3" id="label-3">Кнопка 3</label>
+        <div class="carousel">
+            <div class="line">
+                <div class="slide">Слайд1</div>
+                <div class="slide">Слайд2</div>
+                <div class="slide">Слайд3</div>
+            </div>
+
+        </div>
+    </div> -->
+
+
+    <footer>
+
+
+    </footer>
+
+</body>
+
+</html>
